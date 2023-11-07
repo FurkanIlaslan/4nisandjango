@@ -5,8 +5,8 @@
     <div class="container">
         <form action="" method="POST" enctype="multipart/form-data" class="w-50 m-auto border text-light mt-4 p-3">
             {% csrf_token %}
-            {% comment %} {{form}} {% endcomment %}
-            <label for="">İsim</label>
+            {{form}}
+            <!-- <label for="">İsim</label>
             <input type="text" name="isim" class="form-control">
 
             <label for="">Soyisim</label>
@@ -28,7 +28,7 @@
             <input type="password" name="sifre1" class="form-control">
 
             <label for="">Şifre Onay</label>
-            <input type="password" name="sifre2" class="form-control">
+            <input type="password" name="sifre2" class="form-control"> -->
 
             <input type="submit" value="Kayıt Ol" class="btn btn-danger mt-3">
         </form>
