@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-oq=mn8x1mp4558*%a0_alv*6x5nk%0ryy0j%aa0qx-&jw%ls&8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["furkanilaslan17.pythonanywhere.com"]
+ALLOWED_HOSTS = ["4nisan.pythonanywhere.com"]
 
 
 # Application definition
@@ -124,7 +124,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR/ 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -141,3 +141,12 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR : 'danger'
 }
+
+# email
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "furkanilaslan@gmail.com"
+EMAIL_HOST_PASSWORD = "wvnd mxum gpbi zfzj"
